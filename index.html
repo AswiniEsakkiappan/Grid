@@ -1,0 +1,173 @@
+<head>
+    <style>
+.grid_container{
+    display:grid;
+    
+    grid-template-areas: 
+    "header header header"
+    "nav main side"
+    "footer footer footer";
+    grid-template-columns: 1fr,2fr ,1fr ;
+    gap:10px;
+    padding:10px;
+    color:2px solid blue;
+
+}
+.grid_container div{
+            border:10px solid black;
+            padding : 10px;
+}
+.header{
+    grid-area: header;
+    background-image: url(header.jfif);
+    background-position: center;
+    background-size: cover;
+
+
+}
+.header h1{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0cqmax;
+
+}
+.nav{
+    grid-area: nav;
+    background-color:hotpink ;
+    background-position: center;
+    background-size: cover;
+    
+}
+.nav h3{
+    font-weight: bold;
+    color: white;
+}
+.nav ul li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: chartreuse;
+}
+
+.main{
+    padding: 20px;
+    background-image: url(main.jfif);
+    background-position: center;
+    background-size: cover;
+    
+}
+.main p{
+    font-size: 20px;
+    
+
+
+}
+.main ul{
+    font-size: 20px;
+    color: deeppink;
+
+}
+.main ol{
+    font-size: 20px;
+    color: deeppink;
+
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+.side{
+    grid-template-rows: side;
+    background-image: url(side.jfif);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.side p{
+color: white;
+}
+.side h3{
+    color: white;
+}
+.side ol li{
+    color: aqua;
+}
+.main h1 ,h2,h3,h4{
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+     <div class= "header">
+        <center>
+        <h1>Welcome to learn about php</h1>
+    </center>
+     </div>
+     <div class="nav">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#var">Variabes</a></li>
+            <li><a href="#data">Datatype</a></li>
+            <li><a href="#opr">Operators</a></li>
+            <li><a href="#con">conclusion</a></li>
+        </ul>
+     </div>
+     <div class="main">
+        <h2 id="intro"> Introduction </h2>
+        <p>What is php?</p>
+        <ul style="list-style: circle;">
+           <li> PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+           <li> PHP is a widely-used, open source scripting language</li>
+           <li> PHP scripts are executed on the server</li>
+           <li> PHP is free to download and use</li>
+
+        </ul>
+        <h2 id="var">PhP Variables</h2>
+        <p>A variable can have a short name (like $x and $y) or a more descriptive name ($age, $carname, $total_volume)</p>
+        <h4>Rules for PHP variables</h4>
+        <ol>
+           <li> A variable starts with the $ sign, followed by the name of the variable</li>
+           <li> A variable name must start with a letter or the underscore character</li>
+           <li> A variable name cannot start with a number</li>
+           <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+           <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+        </ol>
+        <h3 id="data">PHP data types</h3>
+        <center>
+        <img src="daa.webp" height="300" width="500"></center>
+        <h3 id="opr">PHP Operators</h3>
+        <p>Variables can store data of different types, and different data types can do different things.
+
+            PHP supports the following data types:
+            
+            String,
+            Integer,
+            Float (floating point numbers - also called double),
+            Boolean,
+            Array,
+            Object,
+            NULL,
+            Resource.</p>
+            <h2 id="con">Conclusion:</h2>
+            <p>PHP data types are the foundation of how information is stored and handled in your scripts. From simple values like numbers and strings to complex structures like arrays and objects, understanding these types helps you write better and more efficient code</p>
+
+
+     </div>
+     <div class="side">
+<h3>Sidebar</h3>
+        <p><strong>Note:</strong>php statements end with a semicolon(;)</p>
+        <ol>
+<li>however , all variable names aee case sensitive</li>
+<li>php has no command for declaring a variable</li>
+<li>the first charactor has index 0</li>
+        </ol>
+       <p>for futher more information <a href ="https://www.w3schools.com/php/default.asp " ><em>click here</em> </a></p>
+     </div>
+     <div class="footer">
+        &copy;2025 wep design lab. all rights received.
+     </div>
+    </div>
+</body>
