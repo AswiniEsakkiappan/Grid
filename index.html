@@ -96,6 +96,16 @@ color: white;
 .main h1 ,h2,h3,h4{
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+      .grid-container {
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "right"
+          "footer";
+        grid-template-columns: 1fr; /* single column layout */
+      }
     </style>
 </head>
 <body>
